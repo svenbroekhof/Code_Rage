@@ -12,16 +12,18 @@
 </head>
 
 <body>
-    <!-- Include all the contents of the page. -->
-    <main id="contents">
 
-        <div class="wrapper">
+    <div class="d-flex" id="wrapper">
 
-            <?php include("./layout/sidebar.php"); ?>
+        <!-- Sidebar -->
+        <?php include("./layout/sidebar.php"); ?>
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
 
             <?php include("./layout/navbar.php"); ?>
 
-            <section class="content">
+            <section class="container-fluid">
                 <?php
                 if (isset($_GET["content"])) {
                     include("./pages/" . $_GET["content"] . ".php");
@@ -35,7 +37,8 @@
 
         </div>
 
-    </main>
+    </div>
+
 
     <!-- Footer -->
     <?php include("./layout/footer.php"); ?>
