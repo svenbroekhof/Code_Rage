@@ -8,7 +8,7 @@
     include("./index/css.php");
     ?>
 
-    <title>Hello, world!</title>
+    <title>Code rage</title>
 </head>
 
 <body>
