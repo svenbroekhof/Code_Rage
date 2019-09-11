@@ -8,7 +8,7 @@
     include("./index/css.php");
     ?>
 
-    <title>Code rage</title>
+    <title>Code_Rage</title>
     <link rel="shortcut icon" type="image/png" href="/img/icon_white.png">
 
 </head>
