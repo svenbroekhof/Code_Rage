@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -10,7 +10,7 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-text nav-link" href="./index.php?content=homepage">
-                    <img src="./img/icon/logo.png" width="20px" height="20px" style="margin-bottom: 3px;">Home</a>
+                    <img src="./img/icon/logo.png" width="200px" height="40px">Home</a>
             </li>
         </ul>
 

@@ -6,3 +6,5 @@
 
 <!-- Custom CSS files -->
 <link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/sidebar.css">
+<link rel="stylesheet" href="./css/navbar.css">
