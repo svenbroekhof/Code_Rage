@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,7 +12,27 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <!-- Include all the contents of the page. -->
+    <main id="contents">
+
+        <?php include("./layout/navbar.php"); ?>
+
+        <section class="content">
+            <?php
+            if (isset($_GET["content"])) {
+                include("./pages/" . $_GET["content"] . ".php");
+            } else if (empty(isset($_GET["content"]))) {
+                include("./pages/homepage.php");
+            } else {
+                include("./pages/homepage.php");
+            }
+            ?>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <?php include("./layout/footer.php"); ?>
 
     <!-- Include the needed scripts. -->
     <?php include("./index/js.php"); ?>
