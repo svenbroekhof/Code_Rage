@@ -1,3 +1,7 @@
 #navbar {
     background-color: lightgray;
 }
+
+.nav-logo {
+    height: 60px;
+}

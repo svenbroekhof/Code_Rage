@@ -36,3 +36,16 @@
         margin-left: -15rem;
     }
 }
+
+.spinEffect {
+    -webkit-animation: spin 0.5s infinite linear;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
