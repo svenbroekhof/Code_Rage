@@ -9,6 +9,8 @@
     ?>
 
     <title>Code rage</title>
+    <link rel="shortcut icon" type="image/png" href="/img/icon.png">
+
 </head>
 
 <body>
