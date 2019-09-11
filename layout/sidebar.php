@@ -1,7 +1,7 @@
 <div class="bg-light border-right" id="sidebar-wrapper">
 
     <div class="sidebar-heading">
-
+        <img class="profile-picture" src="./img/profile.png">
     </div>
 
     <div class="list-group list-group-flush">

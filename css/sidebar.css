@@ -49,3 +49,7 @@
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
+
+.profile-picture {
+    max-width: 80px;
+}
