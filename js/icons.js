@@ -20,7 +20,7 @@ window.FontAwesomeKitConfig = {
     },
     "version": "latest"
 };
-! function () {
+!function () {
     function r(e) {
         var t, n = [],
             i = document,
@@ -30,7 +30,9 @@ window.FontAwesomeKitConfig = {
         a || i.addEventListener(r, t = function () {
             for (i.removeEventListener(r, t), a = 1; t = n.shift();) t()
         }), a ? setTimeout(e, 0) : n.push(e)
-    }! function () {
+    }
+
+    !function () {
         if (!(void 0 === window.Element || "classList" in document.documentElement)) {
             var e, t, n, i = Array.prototype,
                 o = i.push,
@@ -48,7 +50,7 @@ window.FontAwesomeKitConfig = {
                 },
                 remove: function (e) {
                     if (this.contains(e)) {
-                        for (var t = 0; t < this.length && this[t] != e; t++);
+                        for (var t = 0; t < this.length && this[t] != e; t++) ;
                         r.call(this, t, 1), this.el.className = this.toString()
                     }
                 },
@@ -76,12 +78,13 @@ window.FontAwesomeKitConfig = {
             n = e.getAttribute("title"), e.setAttribute("aria-hidden", "true"), i = !e.nextElementSibling || !e.nextElementSibling.classList.contains("sr-only"), n && i && ((o = document.createElement("span")).innerHTML = n, o.classList.add("sr-only"), e.parentNode.insertBefore(o, e.nextSibling))
         })
     }
+
     var d = function (e, t) {
             var n = document.createElement("link");
             n.href = e, n.media = "all", n.rel = "stylesheet", n.id = "font-awesome-5-kit-css", t && t.detectingConflicts && t.detectionIgnoreAttr && n.setAttributeNode(document.createAttribute(t.detectionIgnoreAttr)), document.getElementsByTagName("head")[0].appendChild(n)
         },
         c = function (e, t) {
-            ! function (e, t) {
+            !function (e, t) {
                 var n, i = t && t.before || void 0,
                     o = t && t.media || void 0,
                     r = window.document,
@@ -112,6 +115,7 @@ window.FontAwesomeKitConfig = {
                 function l() {
                     a.addEventListener && a.removeEventListener("load", l), a.media = o || "all"
                 }
+
                 a.addEventListener && a.addEventListener("load", l), (a.onloadcssdefined = s)(l)
             }(e, t)
         },
@@ -132,6 +136,7 @@ window.FontAwesomeKitConfig = {
             a = t && t.subdir || e.method;
         return e.baseUrl + "/releases/" + ("latest" === e.version ? "latest" : "v".concat(e.version)) + "/" + a + "/" + i + o + "." + r
     }
+
     var t, n, i, o, l;
     try {
         if (window.FontAwesomeKitConfig) {
@@ -183,5 +188,6 @@ window.FontAwesomeKitConfig = {
                 }), e.async = !0, document.body.appendChild(e)
             }))
         }
-    } catch (e) {}
+    } catch (e) {
+    }
 }();

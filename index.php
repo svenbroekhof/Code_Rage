@@ -15,38 +15,38 @@
 
 <body>
 
-    <div class="content d-flex" id="wrapper">
+<div class="content d-flex" id="wrapper">
 
-        <!-- Sidebar -->
-        <?php include("./layout/sidebar.php"); ?>
+    <!-- Sidebar -->
+    <?php include("./layout/sidebar.php"); ?>
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
 
-            <?php include("./layout/navbar.php"); ?>
+        <?php include("./layout/navbar.php"); ?>
 
-            <section class="container-fluid">
-                <?php
-                if (isset($_GET["content"])) {
-                    include("./pages/" . $_GET["content"] . ".php");
-                } else if (empty(isset($_GET["content"]))) {
-                    include("./pages/homepage.php");
-                } else {
-                    include("./pages/homepage.php");
-                }
-                ?>
-            </section>
-
-        </div>
+        <section class="container-fluid">
+            <?php
+            if (isset($_GET["content"])) {
+                include("./pages/" . $_GET["content"] . ".php");
+            } else if (empty(isset($_GET["content"]))) {
+                include("./pages/homepage.php");
+            } else {
+                include("./pages/homepage.php");
+            }
+            ?>
+        </section>
 
     </div>
 
+</div>
 
-    <!-- Footer -->
-    <?php include("./layout/footer.php"); ?>
 
-    <!-- Include the needed scripts. -->
-    <?php include("./index/js.php"); ?>
+<!-- Footer -->
+<?php include("./layout/footer.php"); ?>
+
+<!-- Include the needed scripts. -->
+<?php include("./index/js.php"); ?>
 </body>
 
 </html>
