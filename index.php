@@ -18,7 +18,7 @@
     <div class="d-flex" id="wrapper">
 
         <!-- Sidebar -->
-        <?php include("./layout/sidebar.php"); ?>
+<!--<?php //include("./layout/sidebar.php"); ?>-->
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
@@ -30,9 +30,9 @@
                 if (isset($_GET["content"])) {
                     include("./pages/" . $_GET["content"] . ".php");
                 } else if (empty(isset($_GET["content"]))) {
-                    include("./pages/homepage.php");
+                    include("./pages/main.php");
                 } else {
-                    include("./pages/homepage.php");
+                    include("./pages/main.php");
                 }
                 ?>
             </section>

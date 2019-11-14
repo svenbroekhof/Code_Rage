@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
 
-    <button class="rotate sidebar-collapse btn mr-auto" id="menu-toggle">
-        <span class="fas fa-chevron-left fa-2x"></span>
-    </button>
+<!--    <button class="rotate sidebar-collapse btn mr-auto" id="menu-toggle">-->
+<!--        <span class="fas fa-chevron-left fa-2x"></span>-->
+<!--    </button>-->
 
     <div class="navbar-brand">
         <a href="#"><img class="nav-logo" src="./img/logo.png"></a>
