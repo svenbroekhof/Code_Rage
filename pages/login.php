@@ -1,4 +1,5 @@
 <!-- Deze pagina is nog niet af! -->
+<link rel="stylesheet" href="./css/style.css">
 
 <form class="loginform">
   <div class="form-group">
