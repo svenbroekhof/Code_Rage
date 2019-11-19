@@ -4,7 +4,7 @@
     <!--        <span class="fas fa-chevron-left fa-2x"></span>-->
     <!--    </button>-->
 
-    <div class="navbar-brand" id="main-navigation">
+    <div class="navbar-brand">
         <a href="#"><img class="nav-logo" src="./img/logo.png"></a>
     </div>
 
