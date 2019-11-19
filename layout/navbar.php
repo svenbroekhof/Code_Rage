@@ -18,12 +18,12 @@
         <ul class="navbar-nav ml-auto">
 
             <li class="nav-item">
-                <button class="btn" data-toggle="modal" data-target="#login"><i class="fas fa-sign-in-alt"></i> Login</button>
+                <button class="btn" data-toggle="modal" data-target="#login"><i class="fas fa-address-card"></i> Aanmelden</button>
             </li>
 
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <button class="btn" data-toggle="modal" data-target="#register"><i class="fas fa-address-card"></i> Register</button>
-            </li>
+            </li> -->
 
         </ul>
 
@@ -48,6 +48,7 @@
                   <div class="input-group mb-3">
                       <input type="password" class="form-control" placeholder="Wachtwoord" aria-label="Password" aria-describedby="basic-addon1">
                   </div>
+                  <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#register"><i class="fas fa-sign-in-alt"></i> Register</a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
@@ -78,6 +79,7 @@
                   <div class="input-group mb-3">
                       <input type="password" class="form-control" placeholder="Wachtwoord" aria-label="Password" aria-describedby="basic-addon1">
                   </div>
+                  <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#login"><i class="fas fa-sign-in-alt"></i> Login</a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
