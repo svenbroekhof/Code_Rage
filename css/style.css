@@ -1,23 +1,15 @@
 body {
     overflow-x: hidden;
+    background-color: #FFCF10;
 }
 
+/*#main_tag {*/
+/*    background-color: white; !important;*/
+/*}*/
 
-#main-bkr {
-    height: 60%;
-    width: 100%;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
+#second_main_tag {
+    background-color: white; !important;
 }
-
-.stretch {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-}
-
 
 .loginform {
     background-color: rgb(255, 255, 255);

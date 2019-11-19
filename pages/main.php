@@ -1,6 +1,20 @@
 <div class="row">
-    <div class="col-12" id="main-bkr">
-        <img src="./img/background-main.png" alt="Background-main" class="stretch">
-        <p>Test</p>
+    <div class="col-sm-12" id="main_tag">
+        <div class="div-sm-4">
+<!--            <h1>Hello World</h1>-->
+        </div>
+        <div class="div-sm-4">
+            <h1 class="w90 mx-auto p-ff-roboto-slab-bold fs-display2 ta-center mb16 text-center">
+            We
+            <span class="ff-mono"><3</span>
+             people who code
+            <h1/>
+        </div>
+        <div class="div-sm-4">
+<!--            <img src="./img/">-->
+        </div>
+    </div>
+    <div class="col-sm-12" id="second_main_tag">
+        <!--        <h1>Hello World</h1>-->
     </div>
 </div>
