@@ -18,7 +18,9 @@
         <ul class="navbar-nav ml-auto">
 
             <li class="nav-item">
-                <button class="btn" data-toggle="modal" data-target="#login"><i class="fas fa-address-card"></i> Aanmelden</button>
+                <button class="btn" data-toggle="modal" data-target="#login"><i class="fas fa-address-card"></i>
+                    Aanmelden
+                </button>
             </li>
 
             <!-- <li class="nav-item">
@@ -41,14 +43,17 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                  <div class="input-group mb-3">
-                      <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
-                  </div>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email" aria-label="Email"
+                               aria-describedby="basic-addon1">
+                    </div>
 
-                  <div class="input-group mb-3">
-                      <input type="password" class="form-control" placeholder="Wachtwoord" aria-label="Password" aria-describedby="basic-addon1">
-                  </div>
-                  <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#register"><i class="fas fa-sign-in-alt"></i> Register</a>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" placeholder="Wachtwoord" aria-label="Password"
+                               aria-describedby="basic-addon1">
+                    </div>
+                    <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#register"><i
+                                class="fas fa-sign-in-alt"></i> Register</a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-primary">Login</button>
@@ -67,30 +72,30 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                  <div class="input-group mb-3">
-                      <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
-                  </div>
-
-                  <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                  </div>
-
-                  <div class="input-group mb-3">
-                      <input type="password" class="form-control" placeholder="Wachtwoord" aria-label="Password" aria-describedby="basic-addon1">
-                  </div>
-
-                  <div class="dropdown">
-                    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Rol
-                    </a>
-
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="#">Student</a>
-                      <a class="dropdown-item" href="#">Docent</a>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email" aria-label="Email"
+                               aria-describedby="basic-addon1">
                     </div>
-                  </div>
 
-                  <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#login"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                               aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" placeholder="Wachtwoord" aria-label="Password"
+                               aria-describedby="basic-addon1">
+                    </div>
+                        <div class="form-group">
+<!--                            <label for="exampleFormControlSelect1">Rol</label>-->
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Student</option>
+                                <option>Docent</option>
+
+                            </select>
+                        </div>
+                    <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#login"><i
+                                class="fas fa-sign-in-alt"></i> Login</a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-primary">Register</button>
