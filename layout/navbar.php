@@ -51,7 +51,6 @@
                   <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#register"><i class="fas fa-sign-in-alt"></i> Register</a>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-outline-primary">Login</button>
                 </div>
             </div>
@@ -62,7 +61,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">register</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -79,10 +78,21 @@
                   <div class="input-group mb-3">
                       <input type="password" class="form-control" placeholder="Wachtwoord" aria-label="Password" aria-describedby="basic-addon1">
                   </div>
+
+                  <div class="dropdown">
+                    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Rol
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Student</a>
+                      <a class="dropdown-item" href="#">Docent</a>
+                    </div>
+                  </div>
+
                   <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#login"><i class="fas fa-sign-in-alt"></i> Login</a>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-outline-primary">Register</button>
                 </div>
             </div>
