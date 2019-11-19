@@ -41,7 +41,13 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                  <div class="input-group mb-3">
+                      <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group mb-3">
+                      <input type="password" class="form-control" placeholder="Wachtwoord" aria-label="Password" aria-describedby="basic-addon1">
+                  </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
@@ -61,7 +67,17 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                  <div class="input-group mb-3">
+                      <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+
+                  <div class="input-group mb-3">
+                      <input type="password" class="form-control" placeholder="Wachtwoord" aria-label="Password" aria-describedby="basic-addon1">
+                  </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
