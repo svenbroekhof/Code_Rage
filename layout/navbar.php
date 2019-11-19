@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" id="main-navigation">
 
     <!--    <button class="rotate sidebar-collapse btn mr-auto" id="menu-toggle">-->
     <!--        <span class="fas fa-chevron-left fa-2x"></span>-->
     <!--    </button>-->
 
-    <div class="navbar-brand">
+    <div class="navbar-brand" id="main-navigation">
         <a href="#"><img class="nav-logo" src="./img/logo.png"></a>
     </div>
 

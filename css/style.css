@@ -1,11 +1,14 @@
 body {
     overflow-x: hidden;
+}
+
+#main_tag {
     background-color: #FFCF10;
 }
 
-/*#main_tag {*/
-/*    background-color: white; !important;*/
-/*}*/
+#title {
+    margin-top: 50px;
+}
 
 #second_main_tag {
     background-color: white; !important;
