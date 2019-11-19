@@ -1,5 +1,4 @@
-<div class="container">
-  <div class="row">
+ <div class="row">
     <div class="col-4">
       <div class="card" style="width: 18rem;">
         <img src="..." class="card-img-top" alt="...">
@@ -28,4 +27,3 @@
       </div>
     </div>
   </div>
-</div>

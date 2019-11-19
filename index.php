@@ -25,17 +25,11 @@
 
             <?php include("./layout/navbar.php"); ?>
 
-            <section class="container-fluid">
-                <?php
-                if (isset($_GET["content"])) {
-                    include("./pages/" . $_GET["content"] . ".php");
-                } else if (empty(isset($_GET["content"]))) {
-                    include("./pages/main.php");
-                } else {
-                    include("./pages/main.php");
-                }
-                ?>
-            </section>
+            <main class="container-fluid" id="main">
+                <div class="row">
+                    <div class="col-12"><?php include("./pageloader.php"); ?></div>
+                </div>
+            </main>
 
         </div>
 
