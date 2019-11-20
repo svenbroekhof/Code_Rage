@@ -1,5 +1,5 @@
-<img src="./img/moon.png" class="img-fluid" id="bannerimage" alt="Responsive image" style="height: 200px; width: 100%;">
-<!-- <div class="row">
+<div class="row">
+     <img src="./img/moon.png" class="img-fluid" id="bannerimage" alt="Responsive image">
     <div class="col-sm-12" id="main_tag">
         <div class="row">
             <div class="col-sm-4 d-flex">
@@ -19,4 +19,4 @@
             <h1>Hello World</h1>
         </div>
     </div>
-</div> -->
+</div>

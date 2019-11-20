@@ -2,6 +2,10 @@ body {
     overflow-x: hidden;
 }
 
+#bannerimage {
+    height: 50%;
+}
+
 /*#main_tag {*/
 /*    background-color: #FFCF10;*/
 /*}*/
