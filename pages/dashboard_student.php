@@ -10,12 +10,7 @@
                     <div class="col-sm-6">
                         <h1 class="m-0 text-dark">Dashboard</h1>
                     </div><!-- /.col -->
-                    <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Starter Page</li>
-                        </ol>
-                    </div><!-- /.col -->
+                    <div class="col-sm-6"></div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container-fluid -->
         </div>
@@ -35,7 +30,7 @@
                                     content.
                                 </p>
 
-                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Card link</a>Almere
                                 <a href="#" class="card-link">Another link</a>
                             </div>
                         </div>
@@ -88,22 +83,8 @@
     </div>
     <!-- /.content-wrapper -->
 
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-        <!-- Control sidebar content goes here -->
-        <div class="p-3">
-            <h5>Title</h5>
-            <p>Sidebar content</p>
-        </div>
-    </aside>
-    <!-- /.control-sidebar -->
-
     <!-- Main Footer -->
-    <footer class="main-footer">
-        <!-- To the right -->
-        <div class="float-right d-none d-sm-inline">
-            Anything you want
-        </div>
+    <footer class="main-footer" id="footer">
         <!-- Default to the left -->
         <strong>Copyright &copy; 2019-2020 <a href="#">CodeRage</a>.</strong> All rights reserved.
     </footer>

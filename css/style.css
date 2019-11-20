@@ -35,19 +35,19 @@ body {
     padding: 1rem;
 }
 
-/*#bannerimage {*/
-/*    background: !* Transparantie met gradient *! linear-gradient(*/
-/*            rgba(0, 0, 0, 0.4),*/
-/*            rgba(0, 0, 0, 0.5)*/
-/*    ),*/
-/*        !* Afbeelding *! url("../img/moon.png");*/
-/*    background-size: cover;*/
-/*    height: 500px;*/
-/*    border-radius: 0%;*/
-/*    padding-top: 200px;*/
-/*    color: white;*/
-/*    text-align: center;*/
-/*}*/
+#bannerimage {
+    background: /* Transparantie met gradient */ linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.5)
+    ),
+        /* Afbeelding */ url("../img/moon.png");
+    background-size: cover;
+    height: 500px;
+    border-radius: 0%;
+    padding-top: 200px;
+    color: white;
+    text-align: center;
+}
 
 #cover_image {
     Width: -moz-max-content;
