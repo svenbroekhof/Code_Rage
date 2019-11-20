@@ -20,18 +20,15 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
+
                     <div class="col-lg-6">
                         <div class="card">
+                          <div class="card-header">
+                              <h5 class="m-0">Mijn vragen</h5>
+                          </div>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-
-                                <p class="card-text">
-                                    Some quick example text to build on the card title and make up the bulk of the card's
-                                    content.
-                                </p>
-
-                                <a href="#" class="card-link">Card link</a>Almere
-                                <a href="#" class="card-link">Another link</a>
+                                <a href="#" class="card-link">php echo not working</a> <br>
+                                <a href="#" class="card-link">javascript alert() error</a>
                             </div>
                         </div>
 
@@ -52,25 +49,29 @@
                     <div class="col-lg-6">
                         <div class="card">
                             <div class="card-header">
-                                <h5 class="m-0">Featured</h5>
+                                <h5 class="m-0">Meest gebruikte tags</h5>
                             </div>
                             <div class="card-body">
-                                <h6 class="card-title">Special title treatment</h6>
-
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <p class="card-text">Php: 5 posts</p>
+                                <p class="card-text">Python: 2 posts</p>
+                                <p class="card-text">Javascript: 1 posts</p>
                             </div>
                         </div>
 
                         <div class="card card-primary card-outline">
                             <div class="card-header">
-                                <h5 class="m-0">Featured</h5>
+                                <h5 class="m-0">Openstaande vragen</h5>
                             </div>
                             <div class="card-body">
-                                <h6 class="card-title">Special title treatment</h6>
+                              <div class="row">
+                                <div class="col-sm">
+                                  <p class="card-text">PHP undefined error</p>
+                                </div>
 
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="col-sm">
+                                  <a href="#" class="btn btn-success" style="float: right;">Open</a>
+                                </div>
+                              </div>
                             </div>
                         </div>
                     </div>
