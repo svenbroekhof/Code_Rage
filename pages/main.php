@@ -1,14 +1,9 @@
-<div class="jumbotron jumbotron-fluid" id="bannerimage">
-            <div class="container"id="HalloJumbo">
-              <h3>Code rage</h3>
-              <input type="text" class="form-control" placeholder="Zoek" aria-label="text" aria-describedby="basic-addon1"> <div class="modal-footer">
-                  <button type="button" class="btn btn-outline-primary">Zoek</button>
-              </div>
-            </div>
-        </div>
-
-<!-- <div class="row">
->>>>>>> refs/remotes/origin/master
+<div class="row">
+    <div class="col-sm-12">
+        <img src="./img/moon.png" class="img-fluid" id="cover_image" alt="Responsive image">
+    </div>
+</div>
+<div class="row">
     <div class="col-sm-12" id="main_tag">
         <div class="row">
             <div class="col-sm-4 d-flex">
