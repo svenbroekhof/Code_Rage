@@ -9,10 +9,10 @@
                 <button type="button" class="btn btn-secondary btn-block btn-lg" id="search_submit">Zoek</button>
             </div>
     </div>
-</div>
-    <div class="row">
-        <div class="col-sm-12" id="second_main_tag">
-            <h1>Hello World</h1>
-        </div>
-    </div>
-</div>
+<!--</div>-->
+<!--    <div class="row">-->
+<!--        <div class="col-sm-12" id="second_main_tag">-->
+<!--            <h1>Hello World</h1>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->

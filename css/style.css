@@ -18,7 +18,7 @@ input {
 }
 
 #second_main_tag {
-    background-color: white; !important;
+    background-color: white;
 }
 
 .loginform {
@@ -41,6 +41,9 @@ input {
 
 
 #bannerimage {
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: #FFCF10;
     background-image: url("/img/background-mains.png");
     background-repeat: no-repeat;
     background-size: cover;
