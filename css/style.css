@@ -2,13 +2,16 @@ body {
     overflow-x: hidden;
 }
 
-#bannerimage {
-    height: 50%;
+input {
+    text-align: center;
 }
-
-/*#main_tag {*/
-/*    background-color: #FFCF10;*/
-/*}*/
+.container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+#main_tag {
+    background-color: #FFCF10;
+}
 
 #title {
     margin-top: 50px;
@@ -35,22 +38,22 @@ body {
     padding: 1rem;
 }
 
-#bannerimage {
-    background: /* Transparantie met gradient */ linear-gradient(
-            rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0.5)
-    ),
-        /* Afbeelding */ url("../img/moon.png");
-    background-size: cover;
-    height: 500px;
-    border-radius: 0%;
-    padding-top: 200px;
-    color: white;
-    text-align: center;
-}
 
-#cover_image {
-    Width: -moz-max-content;
+
+#bannerimage {
+    background-image: url("/img/background-mains.png");
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+    color: white;
+    font-family: 'Alatsi', sans-serif;
+    height: 600px;
+    padding-top: 13rem;
 }
+
+#search_submit {
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 40px 40px;
+}
+

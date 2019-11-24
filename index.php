@@ -14,33 +14,27 @@
 </head>
 
 <body>
+<div class="d-flex" id="wrapper">
 
-    <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <?php //include("./layout/sidebar.php"); ?>
 
-        <!-- Sidebar -->
-<!--<?php //include("./layout/sidebar.php"); ?>-->
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
+        <?php include("./layout/navbar.php"); ?>
 
-            <?php include("./layout/navbar.php"); ?>
-
-            <main class="container-fluid" id="main">
-                <div class="row">
-                    <div class="col-12"><?php include("./pageloader.php"); ?></div>
-                </div>
-            </main>
-
-        </div>
-
+        <main id="main">
+            <?php include("./pageloader.php"); ?>
+        </main>
     </div>
+</div>
 
+<!-- Footer -->
+<?php include("./layout/footer.php"); ?>
 
-    <!-- Footer -->
-    <?php include("./layout/footer.php"); ?>
-
-    <!-- Include the needed scripts. -->
-    <?php include("./index/js.php"); ?>
+<!-- Include the needed scripts. -->
+<?php include("./index/js.php"); ?>
 </body>
 
 </html>
