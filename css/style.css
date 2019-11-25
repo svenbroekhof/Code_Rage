@@ -44,7 +44,7 @@ input {
     border-top-style: solid;
     border-top-width: 3px;
     border-top-color: #FFCF10;
-    background-image: url("/img/main-background.png");
+    background-image: url("../img/main-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -60,4 +60,3 @@ input {
     margin-top: 30px;
     border-radius: 40px 40px;
 }
-
