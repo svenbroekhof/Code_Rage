@@ -32,7 +32,7 @@
         </div>
         <hr>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-8 col-sm-6 col-xs-12">
                 <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
