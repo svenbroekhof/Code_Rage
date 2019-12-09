@@ -43,25 +43,27 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                 <form action="back_end/login_script.php" method="post">
                     <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="Email" aria-label="Email"
-                               aria-describedby="basic-addon1">
-                    </div>
+                            <input type="email" class="form-control" placeholder="Email" aria-label="Email"
+                                aria-describedby="basic-addon1" name="email">
+                        </div>
 
-                    <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Wachtwoord" aria-label="Password"
-                               aria-describedby="basic-addon1">
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control" placeholder="Wachtwoord" aria-label="Password"
+                                aria-describedby="basic-addon1" name="password">
+                        </div>
+                        <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#register"><i
+                                    class="fas fa-sign-in-alt"></i> Register</a>
                     </div>
-                    <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#register"><i
-                                class="fas fa-sign-in-alt"></i> Register</a>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-primary">Login</button>
-                </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-outline-primary">Login</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <!-- Logout -->
+    <!-- Register -->
     <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -72,23 +74,24 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <form action="index.php?script=register-script" method="post">
                     <div class="input-group mb-3">
                         <input type="email" class="form-control" placeholder="Email" aria-label="Email"
-                               aria-describedby="basic-addon1">
+                               aria-describedby="basic-addon1" name="email">
                     </div>
 
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                               aria-describedby="basic-addon1">
+                               aria-describedby="basic-addon1" name="username">
                     </div>
 
                     <div class="input-group mb-3">
                         <input type="password" class="form-control" placeholder="Wachtwoord" aria-label="Password"
-                               aria-describedby="basic-addon1">
+                               aria-describedby="basic-addon1" name="password">
                     </div>
                         <div class="form-group">
 <!--                            <label for="exampleFormControlSelect1">Rol</label>-->
-                            <select class="form-control" id="exampleFormControlSelect1">
+                            <select class="form-control" id="exampleFormControlSelect1" name="rol">
                                 <option>Student</option>
                                 <option>Docent</option>
 
@@ -98,8 +101,9 @@
                                 class="fas fa-sign-in-alt"></i> Login</a>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-primary">Register</button>
+                    <button type="submit" class="btn btn-outline-primary">Register</button>
                 </div>
+                    </form>
             </div>
         </div>
     </div>

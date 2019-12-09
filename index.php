@@ -14,6 +14,7 @@
 </head>
 
 <body>
+<?php if (isset($_SESSION['email'])) {echo "welkom " . $_SESSION ["email"];}?>
 <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
