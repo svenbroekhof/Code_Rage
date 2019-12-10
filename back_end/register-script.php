@@ -26,7 +26,7 @@ if (preg_match('/[A-Za-z0-9]+/', $_POST['username']) == 0) {
 }
 
 // We need to check if the account with that username exists.
-if ($stmt = $con->prepare('SELECT id, password FROM `login` WHERE username = ?')) {
+if ($stmt = $con->prepare('SELECT user_id, password FROM `login` WHERE username = ?')) {
 	// Bind parameters (s = string, i = int, b = blob, etc), hash the password using the PHP password_hash function.
 	$stmt->bind_param('s', $_POST['username']);
 	$stmt->execute();
@@ -37,7 +37,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM `login` WHERE username = ?')
 		echo 'Deze username is al ingebruik';
 	} else {
 		// Username doesnt exists, insert new account
-        if ($stmt = $con->prepare('INSERT INTO `login` (username, password, email, activation_code) VALUES (?, ?, ?, ?)')) {
+        if ($stmt = $con->prepare('INSERT INTO `login` (user_id, email, password, username, activation_code, role) VALUES (?, ?, ?, ?)')) {
             // We do not want to expose passwords in our database, so hash the password and use password_verify when a user logs in.
             $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
             $uniqid = uniqid();
