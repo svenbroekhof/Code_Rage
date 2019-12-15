@@ -1,3 +1,6 @@
+<?php
+include ('./back_end/register-script.php');
+?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" id="main-navigation">
 
     <!--    <button class="rotate sidebar-collapse btn mr-auto" id="menu-toggle">-->
@@ -5,7 +8,7 @@
     <!--    </button>-->
 
     <div class="navbar-brand">
-        <a href="#"><img class="nav-logo" src="./img/logo.png"></a>
+        <a href="coderage.com"><img class="nav-logo" src="./img/logo.png"></a>
     </div>
 
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -74,24 +77,29 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="index.php?script=register-script" method="post">
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         <div class="input-group mb-3">
                             <input type="email" class="form-control" placeholder="Email" aria-label="Email"
                                    aria-describedby="basic-addon1" name="email">
+                            <span class="error"> * <?php echo $emailErr;?></span>
                         </div>
 
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Username" aria-label="Username"
                                    aria-describedby="basic-addon1" name="username">
+                            <span class="error"> * <?php echo $usernameErr;?></span>
                         </div>
 
                         <div class="input-group mb-3">
                             <input type="password" class="form-control" placeholder="Wachtwoord" aria-label="Password"
                                    aria-describedby="basic-addon1" name="password">
+                            <span class="error"> * <?php echo $passwordErr;?></span>
                         </div>
                         <div class="input-group mb-3">
-                            <input type="password" class="form-control" placeholder="Validate_password" aria-label="Password"
+                            <input type="password" class="form-control" placeholder="Validate_password"
+                                   aria-label="Password"
                                    aria-describedby="basic-addon1" name="validate_password">
+                            <span class="error"> * <?php echo $validationErr;?></span>
                         </div>
                         <div class="form-group">
                             <!--                            <label for="exampleFormControlSelect1">Rol</label>-->
@@ -105,7 +113,7 @@
                                     class="fas fa-sign-in-alt"></i> Login</a>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-outline-primary">Register</button>
+                    <button type="submit" name="submit" class="btn btn-outline-primary" value="submit">Register</button>
                 </div>
                 </form>
             </div>
