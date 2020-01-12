@@ -15,7 +15,6 @@
 </head>
 
 <body>
-<?php if (isset($_SESSION['email'])) {echo "welkom " . $_SESSION ["email"];}?>
 <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
@@ -28,6 +27,7 @@
 
         <main id="main">
             <?php include("./pageloader.php"); ?>
+            <?php if (isset($_SESSION['username'])) {echo "welkom " . $_SESSION ["username"];}?>
         </main>
     </div>
 </div>
