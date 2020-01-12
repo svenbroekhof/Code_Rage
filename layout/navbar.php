@@ -83,19 +83,31 @@ include('./back_end/login.php');
                         <div class="input-group mb-3">
                             <input type="email" class="form-control" placeholder="Email" aria-label="Email"
                                    aria-describedby="basic-addon1" name="email">
+<<<<<<< HEAD
                             <span class="error"></span>
+=======
+                            <span class="error"><?php echo $emailErr;?></span>
+>>>>>>> d089f6a2d036e8697bc02b2c4547663991d94820
                         </div>
 
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Username" aria-label="Username"
                                    aria-describedby="basic-addon1" name="username">
+<<<<<<< HEAD
                             <span class="error"></span>
+=======
+                            <span class="error"><?php echo $usernameErr;?></span>
+>>>>>>> d089f6a2d036e8697bc02b2c4547663991d94820
                         </div>
 
                         <div class="input-group mb-3">
                             <input type="password" class="form-control" placeholder="Wachtwoord" aria-label="Password"
                                    aria-describedby="basic-addon1" name="password">
+<<<<<<< HEAD
                             <span class="error"></span>
+=======
+                            <span class="error"><?php echo $passwordErr;?></span>
+>>>>>>> d089f6a2d036e8697bc02b2c4547663991d94820
                         </div>
                         <div class="form-group">
                             <!--                            <label for="exampleFormControlSelect1">Rol</label>-->
