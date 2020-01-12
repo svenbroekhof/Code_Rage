@@ -5,7 +5,7 @@
     <!--    </button>-->
 
     <div class="navbar-brand">
-        <a href="#"><img class="nav-logo" src="./img/logo.png"></a>
+        <a href="index.php"><img class="nav-logo" src="./img/logo.png"></a>
     </div>
 
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
