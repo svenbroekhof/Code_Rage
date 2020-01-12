@@ -1,9 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" id="main-navigation">
 
-    <!--    <button class="rotate sidebar-collapse btn mr-auto" id="menu-toggle">-->
-    <!--        <span class="fas fa-chevron-left fa-2x"></span>-->
-    <!--    </button>-->
-
     <div class="navbar-brand">
         <a href="index.php"><img class="nav-logo" src="./img/logo.png"></a>
     </div>
@@ -15,7 +11,8 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <ul class="navbar-nav ml-auto">
+        <?php if( !isset($_SESSION['user_id'])){
+            echo('<ul class="navbar-nav ml-auto">
 
             <li class="nav-item">
                 <button class="btn" data-toggle="modal" data-target="#login"><i class="fas fa-address-card"></i>
@@ -23,11 +20,11 @@
                 </button>
             </li>
 
-            <!-- <li class="nav-item">
-                <button class="btn" data-toggle="modal" data-target="#register"><i class="fas fa-address-card"></i> Register</button>
-            </li> -->
-
-        </ul>
+            </ul>');
+        } else {
+            echo('<a class="btn btn-primary" href="index.php?content=dashboard_student" role="button">Profiel</a>');
+        }
+        ?>
 
     </div>
 
@@ -63,6 +60,7 @@
             </div>
         </div>
     </div>
+
     <!-- Register -->
     <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -90,15 +88,14 @@
                                aria-describedby="basic-addon1" name="password">
                     </div>
                         <div class="form-group">
-<!--                            <label for="exampleFormControlSelect1">Rol</label>-->
                             <select class="form-control" id="exampleFormControlSelect1" name="rol">
                                 <option>Student</option>
                                 <option>Docent</option>
 
                             </select>
                         </div>
-                    <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#login"><i
-                                class="fas fa-sign-in-alt"></i> Login</a>
+                    <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#login">
+                    <i class="fas fa-sign-in-alt"></i> Login</a>
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-outline-primary">Register</button>
