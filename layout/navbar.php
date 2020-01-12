@@ -40,7 +40,7 @@ include('./back_end/login.php');
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Login</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true"></span>
                     </button>
                 </div>
                 <div class="modal-body">
@@ -72,7 +72,7 @@ include('./back_end/login.php');
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Register</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true"></span>
                     </button>
                 </div>
                 <div class="modal-body">
@@ -80,34 +80,24 @@ include('./back_end/login.php');
                         <div class="input-group mb-3">
                             <input type="email" class="form-control" placeholder="Email" aria-label="Email"
                                    aria-describedby="basic-addon1" name="email">
-<<<<<<< HEAD
                             <span class="error"></span>
-=======
-                            <span class="error"><?php echo $emailErr;?></span>
->>>>>>> d089f6a2d036e8697bc02b2c4547663991d94820
+                            <span class="error"></span>
                         </div>
 
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Username" aria-label="Username"
                                    aria-describedby="basic-addon1" name="username">
-<<<<<<< HEAD
                             <span class="error"></span>
-=======
-                            <span class="error"><?php echo $usernameErr;?></span>
->>>>>>> d089f6a2d036e8697bc02b2c4547663991d94820
+                            <span class="error"></span>
                         </div>
 
                         <div class="input-group mb-3">
                             <input type="password" class="form-control" placeholder="Wachtwoord" aria-label="Password"
                                    aria-describedby="basic-addon1" name="password">
-<<<<<<< HEAD
                             <span class="error"></span>
-=======
-                            <span class="error"><?php echo $passwordErr;?></span>
->>>>>>> d089f6a2d036e8697bc02b2c4547663991d94820
+                            <span class="error"></span>
                         </div>
                         <div class="form-group">
-<<<<<<< HEAD
                             <select class="form-control" id="exampleFormControlSelect1" name="rol">
                                 <option>Student</option>
                                 <option>Docent</option>
@@ -116,7 +106,6 @@ include('./back_end/login.php');
                         </div>
                     <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#login">
                     <i class="fas fa-sign-in-alt"></i> Login</a>
-=======
                             <!--                            <label for="exampleFormControlSelect1">Rol</label>-->
                             <select class="form-control" id="exampleFormControlSelect1" name="role">
                                 <option value="student">Student</option>
@@ -126,7 +115,6 @@ include('./back_end/login.php');
                         </div>
                         <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#login"><i
                                     class="fas fa-sign-in-alt"></i> Login</a>
->>>>>>> test
                 </div>
                 <div class="modal-footer">
                     <button type="submit" name="submit" class="btn btn-outline-primary" value="submit">Register</button>
