@@ -1,5 +1,6 @@
 <?php
-include ('./back_end/register-script.php');
+include('./back_end/reg.php');
+include('./back_end/login.php');
 ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" id="main-navigation">
 
@@ -8,7 +9,7 @@ include ('./back_end/register-script.php');
     <!--    </button>-->
 
     <div class="navbar-brand">
-        <a href="coderage.com"><img class="nav-logo" src="./img/logo.png"></a>
+        <a href="#"><img class="nav-logo" src="./img/logo.png"></a>
     </div>
 
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -46,10 +47,10 @@ include ('./back_end/register-script.php');
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="back_end/login_script.php" method="post">
+                    <form action="../back_end/login.php" method="post">
                         <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Email" aria-label="Email"
-                                   aria-describedby="basic-addon1" name="email">
+                            <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+                                   aria-describedby="basic-addon1" name="username">
                         </div>
 
                         <div class="input-group mb-3">
@@ -66,6 +67,7 @@ include ('./back_end/register-script.php');
             </div>
         </div>
     </div>
+
     <!-- Register -->
     <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -77,35 +79,29 @@ include ('./back_end/register-script.php');
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                    <form action="../back_end/reg.php" method="post">
                         <div class="input-group mb-3">
                             <input type="email" class="form-control" placeholder="Email" aria-label="Email"
                                    aria-describedby="basic-addon1" name="email">
-                            <span class="error"> * <?php echo $emailErr;?></span>
+                            <span class="error"></span>
                         </div>
 
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Username" aria-label="Username"
                                    aria-describedby="basic-addon1" name="username">
-                            <span class="error"> * <?php echo $usernameErr;?></span>
+                            <span class="error"></span>
                         </div>
 
                         <div class="input-group mb-3">
                             <input type="password" class="form-control" placeholder="Wachtwoord" aria-label="Password"
                                    aria-describedby="basic-addon1" name="password">
-                            <span class="error"> * <?php echo $passwordErr;?></span>
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="password" class="form-control" placeholder="Validate_password"
-                                   aria-label="Password"
-                                   aria-describedby="basic-addon1" name="validate_password">
-                            <span class="error"> * <?php echo $validationErr;?></span>
+                            <span class="error"></span>
                         </div>
                         <div class="form-group">
                             <!--                            <label for="exampleFormControlSelect1">Rol</label>-->
                             <select class="form-control" id="exampleFormControlSelect1" name="role">
-                                <option>Student</option>
-                                <option>Docent</option>
+                                <option value="student">Student</option>
+                                <option value="docent">Docent</option>
 
                             </select>
                         </div>
