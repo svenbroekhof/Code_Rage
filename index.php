@@ -6,6 +6,7 @@
     <?php
     include("./index/meta.php");
     include("./index/css.php");
+    include("./back_end/connect_db.php");
     ?>
 
     <title>Code rage</title>
