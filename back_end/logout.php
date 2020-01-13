@@ -11,7 +11,7 @@
         session_start();
         $_SESSION = array();
         session_destroy();
-        echo("Succesvol uitgelogt!");
+        echo("<h1>Succesvol uitgelogt!</h1>");
         header("Refresh: 1; URL=../index.php");
     ?>
   </body>

@@ -27,6 +27,7 @@
             </ul>');
         } else {
             echo('<a class="btn btn-primary" href="index.php?content=dashboard_student" role="button">Profiel</a>');
+            echo('<a class="btn btn-primary" href="back_end/logout.php" role="button">Log uit</a>');
         }
         ?>
 
