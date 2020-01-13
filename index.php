@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,7 +38,7 @@
 <?php include("./layout/footer.php"); ?>
 
 <!-- Include the needed scripts. -->
-<?php include("./index/js.php"); ?>
+<?php include("./index/js.php");?>
 </body>
 
 </html>

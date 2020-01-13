@@ -1,5 +1,4 @@
 <?php
-        session_start();
         if(isset($_POST['username'], $_POST['password'])){
             require 'db_config.php';
 
