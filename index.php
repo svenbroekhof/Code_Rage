@@ -25,12 +25,13 @@
 
         <?php include("./layout/navbar.php"); ?>
 
-        <main id="main">
-            <?php include("./pageloader.php"); ?>
-            <?php if (isset($_SESSION['username'])) {echo "welkom " . $_SESSION ["username"];}?>
-        </main>
     </div>
 </div>
+
+<main id="main">
+    <?php include("./pageloader.php"); ?>
+    <?php if (isset($_SESSION['username'])) {echo "welkom " . $_SESSION ["username"];}?>
+</main>
 
 <!-- Footer -->
 <?php include("./layout/footer.php"); ?>
