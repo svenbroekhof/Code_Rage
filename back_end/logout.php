@@ -11,7 +11,8 @@
         session_start();
         $_SESSION = array();
         session_destroy();
-        echo("Logout completed. Go back to: <a href='check.php'>Check page</a>");
+        echo("<h1>Succesvol uitgelogt!</h1>");
+        header("Refresh: 1; URL=../index.php");
     ?>
   </body>
 </html>

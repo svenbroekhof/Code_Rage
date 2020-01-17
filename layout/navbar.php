@@ -1,6 +1,6 @@
 <?php
-include('./back_end/reg.php');
-include('./back_end/login.php');
+// include('./back_end/reg.php');
+// include('./back_end/login.php');
 ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" id="main-navigation">
 
@@ -15,7 +15,7 @@ include('./back_end/login.php');
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <?php if( !isset($_SESSION['user_id'])){
+        <?php if( !isset($_SESSION['username'])){
             echo('<ul class="navbar-nav ml-auto">
 
             <li class="nav-item">
@@ -27,6 +27,7 @@ include('./back_end/login.php');
             </ul>');
         } else {
             echo('<a class="btn btn-primary" href="index.php?content=dashboard_student" role="button">Profiel</a>');
+            echo('<a class="btn btn-primary" href="back_end/logout.php" role="button">Log uit</a>');
         }
         ?>
 
@@ -44,9 +45,9 @@ include('./back_end/login.php');
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="../back_end/login.php" method="post">
+                    <form action="back_end/login.php" method="post">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
                                    aria-describedby="basic-addon1" name="username">
                         </div>
 
@@ -76,7 +77,7 @@ include('./back_end/login.php');
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="../back_end/reg.php" method="post">
+                    <form action="index.php?script/reg" method="post">
                         <div class="input-group mb-3">
                             <input type="email" class="form-control" placeholder="Email" aria-label="Email"
                                    aria-describedby="basic-addon1" name="email">
@@ -115,6 +116,15 @@ include('./back_end/login.php');
                         </div>
                         <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#login"><i
                                     class="fas fa-sign-in-alt"></i> Login</a>
+                        </div>
+                        <div class="form-group">
+                          <select class="form-control" id="exampleFormControlSelect1" name="role">
+                              <option value="student">Student</option>
+                              <option value="docent">Docent</option>
+                          </select>
+                        </div>
+                    <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#login">
+                    <i class="fas fa-sign-in-alt"></i> Login</a>
                 </div>
                 <div class="modal-footer">
                     <button type="submit" name="submit" class="btn btn-outline-primary" value="submit">Register</button>

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,18 +26,19 @@
 
         <?php include("./layout/navbar.php"); ?>
 
-        <main id="main">
-            <?php include("./pageloader.php"); ?>
-            <?php if (isset($_SESSION['username'])) {echo "welkom " . $_SESSION ["username"];}?>
-        </main>
     </div>
 </div>
+
+<main id="main">
+    <?php include("./pageloader.php"); ?>
+    <?php if (isset($_SESSION['username'])) {echo "welkom " . $_SESSION ["username"];}?>
+</main>
 
 <!-- Footer -->
 <?php include("./layout/footer.php"); ?>
 
 <!-- Include the needed scripts. -->
-<?php include("./index/js.php"); ?>
+<?php include("./index/js.php");?>
 </body>
 
 </html>
