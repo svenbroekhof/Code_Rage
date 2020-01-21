@@ -6,7 +6,7 @@ if(isset($_POST['username'], $_POST['password'])){
     $usr = $_POST['username'];
 
     $query = dbConnect()->prepare("SELECT username, password FROM login WHERE username=:username AND password=:password");
-    $query->bindParam(':username', $usr);
+    $query->bindParam(':username', $user);
     $query->bindParam(':password', $pass);
     $query->execute();
 
@@ -17,7 +17,7 @@ if(isset($_POST['username'], $_POST['password'])){
     if($row['password'] == $pass || ['username'] == $user){
         session_start();
         $_SESSION['username'] = $_POST['username'];
-        header("Refresh: 1; URL=../index.php?content=dashboard_student");
+//        header("Refresh: 1; URL=../index.php?content=dashboard_student");
 
     }
     else if($row['password'] != $pass) {

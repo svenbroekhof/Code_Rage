@@ -2,8 +2,8 @@
         if(isset($_POST['username'], $_POST['password'])){
             require 'db_config.php';
 
-            $user = $_POST['username'];
-            $email = $_POST['email'];
+            $user = trim($_POST['username']);
+            $email = trim($_POST['email']);
             $pass = hash('sha256', $_POST['password']);
             $role = $_POST['role'];
 

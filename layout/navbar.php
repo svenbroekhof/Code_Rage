@@ -15,21 +15,7 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <?php if( !isset($_SESSION['username'])){
-            echo('<ul class="navbar-nav ml-auto">
-
-            <li class="nav-item">
-                <button class="btn" data-toggle="modal" data-target="#login"><i class="fas fa-address-card"></i>
-                    Aanmelden
-                </button>
-            </li>
-
-            </ul>');
-        } else {
-            echo('<a class="btn btn-primary" href="index.php?content=dashboard_student" role="button">Profiel</a>');
-            echo('<a class="btn btn-primary" href="back_end/logout.php" role="button">Log uit</a>');
-        }
-        ?>
+        <?php include("./layout/passthrew.php") ?>
 
     </div>
 
@@ -41,7 +27,7 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Login</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
@@ -73,15 +59,14 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Register</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="index.php?script/reg" method="post">
+                    <form action="../back_end/reg.php" method="post">
                         <div class="input-group mb-3">
                             <input type="email" class="form-control" placeholder="Email" aria-label="Email"
                                    aria-describedby="basic-addon1" name="email">
-                            <span class="error"></span>
                             <span class="error"></span>
                         </div>
 
@@ -89,42 +74,21 @@
                             <input type="text" class="form-control" placeholder="Username" aria-label="Username"
                                    aria-describedby="basic-addon1" name="username">
                             <span class="error"></span>
-                            <span class="error"></span>
                         </div>
 
                         <div class="input-group mb-3">
                             <input type="password" class="form-control" placeholder="Wachtwoord" aria-label="Password"
                                    aria-describedby="basic-addon1" name="password">
                             <span class="error"></span>
-                            <span class="error"></span>
                         </div>
                         <div class="form-group">
-                            <select class="form-control" id="exampleFormControlSelect1" name="rol">
-                                <option>Student</option>
-                                <option>Docent</option>
-
-                            </select>
-                        </div>
-                    <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#login">
-                    <i class="fas fa-sign-in-alt"></i> Login</a>
-                            <!--                            <label for="exampleFormControlSelect1">Rol</label>-->
                             <select class="form-control" id="exampleFormControlSelect1" name="role">
                                 <option value="student">Student</option>
                                 <option value="docent">Docent</option>
-
                             </select>
                         </div>
-                        <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#login"><i
-                                    class="fas fa-sign-in-alt"></i> Login</a>
-                        </div>
-                        <div class="form-group">
-                          <select class="form-control" id="exampleFormControlSelect1" name="role">
-                              <option value="student">Student</option>
-                              <option value="docent">Docent</option>
-                          </select>
-                        </div>
-                    <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#login">
-                    <i class="fas fa-sign-in-alt"></i> Login</a>
+                        <a class="btn" data-dismiss="modal" data-toggle="modal" data-target="#login">
+                            <i class="fas fa-sign-in-alt"></i> Login</a>
                 </div>
                 <div class="modal-footer">
                     <button type="submit" name="submit" class="btn btn-outline-primary" value="submit">Register</button>
