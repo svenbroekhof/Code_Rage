@@ -30,14 +30,14 @@ h1{
 
 <h1>Stel je vraag:</h1>
 <div class="container" style="border: 2px solid #FFCF10">
-  <form>
+  <form action="index.php?script=submit_question" method="post">
     <!-- Title question -->
     <div class="row">
       <div class="col-12">
         <div class="form-group">
           <label for="title-question"><p class="kop-input">Titel</p></label>
           <p class="description">Geef een titel aan je vraag</p>
-          <input type="text" class="form-control" id="title-question" name="content-title" style="text-align: left;"></input>
+          <input type="text" class="form-control" id="title-question" name="title" style="text-align: left;"></input>
         </div>
       </div>
     </div>
@@ -48,7 +48,7 @@ h1{
         <div class="form-group">
           <label for="title-question"><p class="kop-input">Tag</p></label>
           <p class="description">Geef een tag aan je vraag</p>
-          <input type="text" class="form-control" id="title-question" name="content-title" style="text-align: left;" placeholder="Voorbeeld: PHP"></input>
+          <input type="text" class="form-control" id="title-question" name="tagid" style="text-align: left;" placeholder="Voorbeeld: PHP"></input>
         </div>
       </div>
     </div>
@@ -59,7 +59,7 @@ h1{
         <div class="form-group">
           <label for="exampleFormControlTextarea1"><p class="kop-input">Vraag</p></label>
           <p class="description">Geef zo veel mogelijk informatie over je vraag</p>
-          <textarea class="form-control" id="content-question" rows="10" name="content-vraag"></textarea>
+          <textarea class="form-control" id="content-question" rows="10" name="content"></textarea>
         </div>
       </div>
 

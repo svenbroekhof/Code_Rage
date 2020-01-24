@@ -5,7 +5,7 @@ if(isset($_POST['username'], $_POST['password'])){
     $pass = hash('sha256', $_POST['password']);
     $user = $_POST['username'];
 
-    $query = dbConnect()->prepare("SELECT username, password FROM login WHERE username=:username AND password=:password");
+    $query = dbConnect()->prepare("SELECT username, password, user_id FROM login WHERE username=:username AND password=:password");
     $query->bindParam(':username', $user);
     $query->bindParam(':password', $pass);
     $query->execute();
@@ -24,12 +24,17 @@ if(isset($_POST['username'], $_POST['password'])){
         $_SESSION['role'] = 1;
         session_start();
         $_SESSION['username'] = $_POST['username'];
+<<<<<<< HEAD
         $_SESSION['role'] = $_POST['role'];
 
 
 
 
         header("Refresh: 1; URL=../index.php?content=dashboard_student");
+=======
+        $_SESSION['user_id'] = $row['user_id'];
+       header("Refresh: 1; URL=../index.php?content=dashboard_student");
+>>>>>>> a553b8f229111df4242ce62d92f1b220e916c267
 
     }
     else if($row['password'] != $pass) {
