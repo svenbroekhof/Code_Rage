@@ -10,7 +10,6 @@ if (isset($_POST['username'], $_POST['password'])) {
     $query->bindParam(':password', $pass);
     $query->execute();
 
-    var_dump($query);
     $row = $query->fetch();
     // var_dump(headers_list()); exit;
     if ($row['password'] == $pass || ['username'] == $user) {
@@ -19,18 +18,17 @@ if (isset($_POST['username'], $_POST['password'])) {
         $_SESSION['username'] = $_POST['username'];
         $_SESSION['role'] = $row['role'];
         $_SESSION['user_id'] = $row['user_id'];
-        var_dump($_SESSION['role']);
         if (isset($_SESSION['role'])) {
             $role = $_SESSION['role'];
             switch ($role) {
                 case "student":
-                    header("Refresh: 1; URL=../index.php?content=dashboard_student");
+                    header("Refresh: 0.1; URL=../index.php?content=dashboard_student");
                     break;
                 case "docent":
-                    header("Refresh: 1; URL=../index.php?content=dashboard_docent");
+                    header("Refresh: 0.1; URL=../index.php?content=dashboard_docent");
                     break;
                 case "admin":
-                    header("Refresh: 1; URL=../index.php?content=dashboard_admin");
+                    header("Refresh: 0.1; URL=../index.php?content=dashboard_admin");
                     break;
             }
         }

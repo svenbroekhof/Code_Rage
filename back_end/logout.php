@@ -10,8 +10,7 @@
     <?php
         session_start();
         session_destroy();
-        echo("<h1>Succesvol uitgelogt!</h1>");
-        header("Refresh: 1; URL=../index.php");
+        header("Refresh: 0.1; URL=../index.php");
     ?>
   </body>
 </html>
