@@ -15,7 +15,16 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <?php include("./layout/passthrew.php") ?>
+<!--        include("./layout/passthrew.php")-->
+        <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+                <button class="btn" data-toggle="modal" data-target="#login"><i class="fas fa-address-card"></i>
+                    Aanmelden
+                </button>
+            </li>
+
+        </ul>
 
     </div>
 
