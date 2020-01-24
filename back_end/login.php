@@ -22,7 +22,6 @@ if (isset($_POST['username'], $_POST['password'])) {
         var_dump($_SESSION['role']);
         if (isset($_SESSION['role'])) {
             $role = $_SESSION['role'];
-            var_dump($role);
             switch ($role) {
                 case "student":
                     header("Refresh: 1; URL=../index.php?content=dashboard_student");
