@@ -28,7 +28,7 @@
               $query->execute();
 
               $_SESSION['username'] = $user;
-              header("Location: check.php");
+              header("Location: ../index.php");
             }
         }
       ?>
