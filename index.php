@@ -31,7 +31,6 @@
 
 <main id="main">
     <?php include("./pageloader.php"); ?>
-    <?php if (isset($_SESSION['username'])) {echo "welkom " . $_SESSION ["username"];}?>
 </main>
 
 <!-- Footer -->
