@@ -8,7 +8,9 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0 text-dark">Starter Page</h1>
+                        <h1 class="m-0 text-dark">Dashboard <?php if (isset($_SESSION['username'])) {
+                                echo "van: " . $_SESSION ["username"];
+                            } ?></h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">

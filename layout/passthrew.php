@@ -18,16 +18,16 @@ if (!isset($_SESSION['username'])) {
         $role = $_SESSION['role'];
         switch ($role) {
             case "student":
-                echo('<a class="btn btn-primary" href="../index.php?content=dashboard_student" role="button">Profiel</a>');
-                echo('<a class="btn btn-primary" href="../back_end/logout.php" role="button">Log uit</a>');
+                echo('<a class="btn btn-primary" id="profile_button" href="../index.php?content=dashboard_student" role="button">Profiel</a>');
+                echo('<a class="btn btn-primary" id="logout_button" href="../back_end/logout.php" role="button">Log uit</a>');
                 break;
             case "docent":
-                echo('<a class="btn btn-primary" href="../index.php?content=dashboard_docent" role="button">Profiel</a>');
-                echo('<a class="btn btn-primary" href="../back_end/logout.php" role="button">Log uit</a>');
+                echo('<a class="btn btn-primary" id="profile_button" href="../index.php?content=dashboard_docent" role="button">Profiel</a>');
+                echo('<a class="btn btn-primary" id="logout_button" href="../back_end/logout.php" role="button">Log uit</a>');
                 break;
             case "admin":
-                echo('<a class="btn btn-primary" href="../index.php?content=dashboard_admin" role="button">Profiel</a>');
-                echo('<a class="btn btn-primary" href="../back_end/logout.php" role="button">Log uit</a>');
+                echo('<a class="btn btn-primary" id="profile_button" href="../index.php?content=dashboard_admin" role="button">Profiel</a>');
+                echo('<a class="btn btn-primary" id="logout_button" href="../back_end/logout.php" role="button">Log uit</a>');
                 break;
         }
     }
