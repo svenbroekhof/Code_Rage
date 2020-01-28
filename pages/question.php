@@ -1,5 +1,5 @@
 <style>
-.site-footer{
+    .site-footer{
   margin-top: 100px;
   display: ;
 }
