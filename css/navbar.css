@@ -8,6 +8,7 @@
     border-top-color: #FFCF10;
 
 }
+
 .nav-logo {
     height: 40px;
 }
@@ -25,5 +26,25 @@
 }
 
 #dropdownMenuLink {
-  background-color: lightgray;
+    background-color: lightgray;
+}
+
+#profile_button {
+    padding-left: auto;
+    font-weight: bold;
+}
+
+#profile_button:hover {
+    color: white;
+    background-color: gray;
+}
+
+#logout_button {
+    padding-right: auto;
+    font-weight: bold;
+}
+
+#logout_button:hover {
+    color: white;
+    background-color: gray;
 }

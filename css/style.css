@@ -1,14 +1,19 @@
 body {
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 input {
     text-align: center;
 }
 .container-fluid {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
+
+
 #main_tag {
     background-color: #FFCF10;
 }
@@ -50,9 +55,9 @@ input {
     text-align: center;
     color: white;
     font-family: 'Alatsi', sans-serif;
-    height: 600px;
+    height: 700px;
     padding-top: 13rem;
-    <!-- COmmit -->
+<!-- Commit -->
 }
 
 #search_submit {
