@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Gegenereerd op: 13 jan 2020 om 14:17
+-- Gegenereerd op: 24 jan 2020 om 11:06
 -- Serverversie: 5.7.24
 -- PHP-versie: 7.2.14
 
@@ -30,14 +30,24 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `content`;
 CREATE TABLE IF NOT EXISTS `content` (
-  `question_id` int(11) NOT NULL,
-  `tagid` int(11) NOT NULL,
+  `question_id` int(11) NOT NULL AUTO_INCREMENT,
+  `tagid` varchar(15) NOT NULL,
   `title` varchar(100) NOT NULL,
   `content` varchar(1000) NOT NULL,
-  `date` datetime DEFAULT NULL,
+  `date` varchar(50) DEFAULT NULL,
+  `user_id` int(11) NOT NULL,
   PRIMARY KEY (`question_id`),
-  UNIQUE KEY `tagid_UNIQUE` (`tagid`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  UNIQUE KEY `tagid_UNIQUE` (`tagid`),
+  KEY `user_id` (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `content`
+--
+
+INSERT INTO `content` (`question_id`, `tagid`, `title`, `content`, `date`, `user_id`) VALUES
+(1, '1', 'test', 'test', 'Tue, 21 Jan 20 09:28:21 +0000', 2),
+(2, 'PHP', 'test 2', 'test1\r\n\r\ntest1', 'Tue, 21 Jan 20 09:31:54 +0000', 2);
 
 -- --------------------------------------------------------
 
@@ -53,41 +63,14 @@ CREATE TABLE IF NOT EXISTS `login` (
   `username` varchar(100) NOT NULL,
   `role` varchar(50) NOT NULL DEFAULT 'student',
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `login`
 --
 
 INSERT INTO `login` (`user_id`, `email`, `password`, `username`, `role`) VALUES
-(1, 'test@test.nl', '9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08', 'test', 'docent'),
 (2, 'docent@docent.nl', '4c48f7dbc22711b189f59d114b93abd825816c962dc34da18d70dcefe6485cea', 'docent', 'docent');
-
--- --------------------------------------------------------
-
---
--- Tabelstructuur voor tabel `reply`
---
-
-DROP TABLE IF EXISTS `reply`;
-CREATE TABLE IF NOT EXISTS `reply` (
-  `questionid` int(11) NOT NULL,
-  `replycontent` varchar(1000) NOT NULL,
-  PRIMARY KEY (`questionid`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Tabelstructuur voor tabel `tags`
---
-
-DROP TABLE IF EXISTS `tags`;
-CREATE TABLE IF NOT EXISTS `tags` (
-  `tagid` int(11) NOT NULL,
-  `tags` varchar(45) NOT NULL,
-  UNIQUE KEY `tagid_UNIQUE` (`tagid`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -105,22 +88,6 @@ CREATE TABLE IF NOT EXISTS `user` (
   UNIQUE KEY `question_id_UNIQUE` (`question_id`),
   UNIQUE KEY `user_id_UNIQUE` (`user_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
---
--- Beperkingen voor geëxporteerde tabellen
---
-
---
--- Beperkingen voor tabel `reply`
---
-ALTER TABLE `reply`
-  ADD CONSTRAINT `questionid` FOREIGN KEY (`questionid`) REFERENCES `content` (`question_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Beperkingen voor tabel `tags`
---
-ALTER TABLE `tags`
-  ADD CONSTRAINT `tagid` FOREIGN KEY (`tagid`) REFERENCES `content` (`tagid`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
