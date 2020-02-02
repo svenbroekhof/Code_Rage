@@ -72,7 +72,6 @@ $row2 = $query->fetch();
     </div>
         <div class="row">
             <h2 style="margin-left: 35%;"><?php echo $row['title']; ?></h2>
-
         </div>
         <br>
         <!-- Tag question -->
@@ -82,6 +81,6 @@ $row2 = $query->fetch();
 
         <!-- Content question -->
         <div class="row">
-            <p style="margin-left: 47%;"><?php echo $row['content']; ?></p>
+            <p style="margin-left: 47%;"><?php echo nl2br($row['content']); ?></p>
         </div>
 </div>
