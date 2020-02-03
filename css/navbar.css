@@ -48,3 +48,14 @@
     color: white;
     background-color: gray;
 }
+
+#question_button {
+    padding-right: auto;
+    font-weight: bold;
+}
+
+#question_button:hover {
+    color: white;
+    background-color: gray;
+}
+

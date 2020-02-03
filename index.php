@@ -8,6 +8,7 @@
     include("./index/meta.php");
     include("./index/css.php");
     include("./back_end/connect_db.php");
+    include("./back_end/functions.php");
     ?>
 
     <title>Code rage</title>

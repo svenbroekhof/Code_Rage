@@ -81,6 +81,6 @@ $row2 = $query->fetch();
 
         <!-- Content question -->
         <div class="row">
-            <p style="margin-left: 47%;"><?php echo nl2br($row['content']); ?></p>
+            <p style="margin-left: 47%;"><?php echo nl2br(htmlspecialchars($row['content'])); ?></p>
         </div>
 </div>
