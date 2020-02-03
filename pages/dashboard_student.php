@@ -34,11 +34,11 @@
                                 $query->bindParam(':user_id', $user_id);
                                 $query->execute();
                                 $row = $query->fetch();
+                                $q_id = $row['question_id'];
                                 if($row['count(title)'] > 0) {
-                                    echo "- " . $row['title'] . "<br>";
-                                    while ($row = $query->fetch()) {
-                                        echo "- " . $row['title'] . "<br>";
-                                    }
+//                                    echo '<a href="index.php?content=rquestion&q=' . $q_id . '">' . $row["title"] . '</a>';
+                                        echo $row['title'];
+                                        echo '<a href="index.php?content=rquestion&q=' . $q_id . '">' . $row["title"] . '</a>';
                                 } else {
                                     echo "Geen vraag gevonden.";
                                 }
