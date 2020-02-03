@@ -27,8 +27,22 @@
                               <h5 class="m-0">Mijn vragen</h5>
                           </div>
                             <div class="card-body">
-                                <a href="index.php?content=rquestion&q=5" class="card-link">php echo not working</a> <br>
-                                <a href="#" class="card-link">javascript alert() error</a>
+                                <?php
+                                $user_id = $_SESSION['user_id'];
+
+                                $query = dbConnect()->prepare("SELECT count(title), question_id, title FROM content WHERE user_id=:user_id");
+                                $query->bindParam(':user_id', $user_id);
+                                $query->execute();
+                                $row = $query->fetch();
+                                if($row['count(title)'] > 0) {
+                                    echo "- " . $row['title'] . "<br>";
+                                    while ($row = $query->fetch()) {
+                                        echo "- " . $row['title'] . "<br>";
+                                    }
+                                } else {
+                                    echo "Geen vraag gevonden.";
+                                }
+                                ?>
                             </div>
                         </div>
 

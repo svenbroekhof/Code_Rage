@@ -30,7 +30,9 @@ h1{
 
 <?php
 if (!isset($_SESSION['username'])) {
-    echo("Je moet ingelogt zijn om een vraag te kunnen stellen.");
+    echo("Je moet ingelogt zijn als student om een vraag te kunnen stellen.");
+} elseif($_SESSION['role'] != "student") {
+    echo("Je moet ingelogt zijn als student om een vraag te kunnen stellen.");
 } else {
     echo'<h1>Stel je vraag:</h1>
     <div class="container" style="border: 2px solid #FFCF10">
