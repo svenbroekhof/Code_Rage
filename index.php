@@ -34,7 +34,7 @@
 </main>
 
 <!-- Footer -->
-<?php include("./layout/footer.php"); ?>
+<?php //include("./layout/footer.php"); ?>
 
 <!-- Include the needed scripts. -->
 <?php include("./index/js.php");?>
