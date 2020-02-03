@@ -27,7 +27,7 @@
                               <h5 class="m-0">Mijn vragen</h5>
                           </div>
                             <div class="card-body">
-                                <a href="#" class="card-link">php echo not working</a> <br>
+                                <a href="index.php?content=rquestion&q=5" class="card-link">php echo not working</a> <br>
                                 <a href="#" class="card-link">javascript alert() error</a>
                             </div>
                         </div>

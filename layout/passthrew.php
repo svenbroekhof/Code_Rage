@@ -20,6 +20,7 @@ if (!isset($_SESSION['username'])) {
             case "student":
                 echo('<div>
                       <a class="btn btn-light" id="profile_button" href="../index.php?content=dashboard_student" role="button">Profile</a>
+                      <a class="btn btn-light" id="question_button" href="../index.php?content=question" role="button">Stel vraag</a>
                       <a class="btn btn-light" id="logout_button" href="../back_end/logout.php" role="button">Log out</a>
                       </div>');
                 break;
