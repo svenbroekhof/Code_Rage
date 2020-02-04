@@ -1,9 +1,10 @@
-body {
+html, body {
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     height: 100%;
 }
+
 
 input {
     text-align: center;
@@ -55,7 +56,7 @@ input {
     text-align: center;
     color: white;
     font-family: 'Alatsi', sans-serif;
-    height: 700px;
+    height: 800px;
     padding-top: 13rem;
 <!-- Commit -->
 }

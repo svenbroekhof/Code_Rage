@@ -1,3 +1,16 @@
+<?php
+if (!isset($_SESSION)) {
+    session_start();
+}
+if ($_SESSION['role'] == "student") {
+
+    session_unset();
+    session_destroy();
+    echo "<script>location.href='../index.php'</script>";
+    exit();
+}
+?>
+
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
 
@@ -104,10 +117,10 @@
     <footer class="main-footer">
         <!-- To the right -->
         <div class="float-right d-none d-sm-inline">
-            Anything you want
+            <!--            Anything you want-->
         </div>
         <!-- Default to the left -->
-        <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+        <!--        <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.-->
     </footer>
 </div>
 <!-- ./wrapper -->

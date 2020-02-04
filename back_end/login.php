@@ -1,11 +1,15 @@
 <?php
+if (!isset($_SESSION)) {
+    session_start();
+}
+
 if (isset($_POST['username'], $_POST['password'])) {
     require 'db_config.php';
 
     $pass = hash('sha256', $_POST['password']);
     $user = $_POST['username'];
 
-    $query = dbConnect()->prepare("SELECT username, password, user_id, role FROM login WHERE username=:username AND password=:password");
+    $query = dbConnect()->prepare("SELECT username, password, user_id, role FROM login WHERE username= :username AND password = :password");
     $query->bindParam(':username', $user);
     $query->bindParam(':password', $pass);
     $query->execute();
@@ -14,7 +18,6 @@ if (isset($_POST['username'], $_POST['password'])) {
     // var_dump(headers_list()); exit;
     if ($row['password'] == $pass || ['username'] == $user) {
         $_SESSION['role'] = 1;
-        session_start();
         $_SESSION['username'] = $_POST['username'];
         $_SESSION['role'] = $row['role'];
         $_SESSION['user_id'] = $row['user_id'];

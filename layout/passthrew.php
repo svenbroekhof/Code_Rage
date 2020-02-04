@@ -1,8 +1,8 @@
 <?php
-
-include("back_end/db_config.php");
-
-
+header_remove();
+//session_start();
+//include("back_end/db_config.php");
+//echo $_SESSION['username'];
 if (!isset($_SESSION['username'])) {
     echo('<ul class="navbar-nav ml-auto">
 

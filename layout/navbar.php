@@ -1,7 +1,3 @@
-<?php
-// include('./back_end/reg.php');
-// include('./back_end/login.php');
-?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" id="main-navigation">
 
     <div class="navbar-brand">
@@ -17,7 +13,7 @@
 
 
         <ul class="navbar-nav ml-auto">
-            <?php include("./layout/passthrew.php") ?>
+            <?php require("passthrew.php") ?>
         </ul>
 
     </div>
